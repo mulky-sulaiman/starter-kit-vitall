@@ -1,0 +1,26 @@
+<template>
+  <!-- <section class="bg-gray-50 dark:bg-gray-900">
+    <div class="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0">
+      <div>
+        <slot name="logo" />
+      </div>
+      <div class="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md sm:rounded-lg">
+        <slot />
+      </div>
+    </div>
+  </section> -->
+  <section class="bg-gray-50 dark:bg-gray-900">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <div>
+        <slot name="logo" />
+      </div>
+      <div
+        class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-lg xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</template>
